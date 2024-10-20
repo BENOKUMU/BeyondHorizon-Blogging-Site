@@ -19,6 +19,30 @@ const UserAuthForm = ({ type }) => {
                 />
                 : ""
             }
+            <InputBox 
+                name="email"
+                type="email"
+                placeholder="Email"
+                icon="fi-rr-envelopes"
+            />
+            <InputBox 
+                name="password"
+                type="password"
+                placeholder="Password"
+                icon="fi-rr-key"
+            />
+
+            <button
+                className='btn-dark centre mt-14'
+                type='submit'
+            >
+                { type.replace("-", " ") }
+            </button>
+
+            <div className='relative w-full flex items-center gap-2 my-10 opacity-10 uppercase text-black font-bold'>
+                <hr className='w-1/2 border-black' />
+                <hr className='w-1/2 border-black' />
+            </div>
         </form>
     </section>
   )
